@@ -1,6 +1,7 @@
 package com.oioip.mapper;
 
 import com.oioip.poji.Department;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Map;
@@ -9,8 +10,9 @@ import java.util.Map;
  * 部门持久层
  * @author Administrator
  */
+@Repository("departmentMapper")
 public class DepartmentMapper {
-    //模拟数据库中的数据
+   //模拟数据库中的数据
    private static Map<Integer, Department> department=null;
    //初始化数据
    static {
