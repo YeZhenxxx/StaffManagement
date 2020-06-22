@@ -6,7 +6,15 @@ package com.oioip.poji;
  */
 public class Department {
     private Integer id;
-    private short departmentName;
+    private String departmentName;
+
+    public Department() {
+    }
+
+    public Department(Integer id, String departmentName) {
+        this.id = id;
+        this.departmentName = departmentName;
+    }
 
     public Integer getId() {
         return id;
@@ -16,11 +24,11 @@ public class Department {
         this.id = id;
     }
 
-    public short getDepartmentName() {
+    public String getDepartmentName() {
         return departmentName;
     }
 
-    public void setDepartmentName(short departmentName) {
+    public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
 
@@ -28,7 +36,7 @@ public class Department {
     public String toString() {
         return "Department{" +
                 "id=" + id +
-                ", departmentName=" + departmentName +
+                ", departmentName='" + departmentName + '\'' +
                 '}';
     }
 }
