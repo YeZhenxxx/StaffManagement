@@ -2,3 +2,7 @@
 spring:
   thymeleaf:
     cache: false
+#修改项目虚拟目录
+#server:
+#  servlet:
+#    context-path: "/ye"
