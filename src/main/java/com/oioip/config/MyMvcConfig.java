@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 自定义mvc配置
  * @author Administrator
  */
-@Configuration
+@Configuration// 添加该注解后springBoot会自动扫描该配置类 从而生效我们的自定义配置
 public class MyMvcConfig implements WebMvcConfigurer {
 
     /**
@@ -34,6 +34,6 @@ public class MyMvcConfig implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/index.html","/user/login","/css/**","/img/**","/js/**");
+        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/index.html","//","/user/login","/css/**","/img/**","/js/**");
     }
 }

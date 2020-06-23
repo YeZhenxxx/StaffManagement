@@ -6,6 +6,10 @@ spring:
     basename: i18n.login
   thymeleaf:
     cache: false
+#设置时间转换格式
+  mvc:
+    format:
+      date: yyyy-MM-dd
 #修改项目虚拟目录
 #server:
 #  servlet:
