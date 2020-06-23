@@ -18,5 +18,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/index").setViewName("index");
         registry.addViewController("/").setViewName("index");
         registry.addViewController("/index.html").setViewName("index");
+        //添加后台页面映射
+        registry.addViewController("/main").setViewName("dashboard");
     }
 }
