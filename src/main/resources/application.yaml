@@ -1,0 +1,4 @@
+#关闭模板引擎的缓冲
+spring:
+  thymeleaf:
+    cache: false
