@@ -1,5 +1,9 @@
 #关闭模板引擎的缓冲
 spring:
+#国际化配置
+  messages:
+#指定国际化配置文件位置
+    basename: i18n.login
   thymeleaf:
     cache: false
 #修改项目虚拟目录
