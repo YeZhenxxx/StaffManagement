@@ -5,10 +5,7 @@ import com.oioip.poji.Employee;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 员工持久层
@@ -17,7 +14,7 @@ import java.util.Map;
 @Repository("employeeMapper")
 public class EmployeeMapper {
     //模拟数据库中的数据
-    private static Map<Integer, Employee> employee=null;
+    private static Map<Integer, Employee> employee=new HashMap<>();
     //模拟员工Id自增长
     private static Integer initId=1008;
     //员工有所属的部门

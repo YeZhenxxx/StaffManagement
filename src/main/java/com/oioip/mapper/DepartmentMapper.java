@@ -4,6 +4,7 @@ import com.oioip.poji.Department;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Map;
 @Repository("departmentMapper")
 public class DepartmentMapper {
    //模拟数据库中的数据
-   private static Map<Integer, Department> department=null;
+   private static Map<Integer, Department> department=new HashMap<>();
    //初始化数据
    static {
        department.put(101,new Department(101,"教学部"));
